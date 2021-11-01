@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/f665390b3c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="jQuery.js"></script>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      p {
+        line-height: 1.6;
+      }
+      .box_shadow {
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+      }
+      .padding_container {
+        padding: 8vh 0% 8vh 0%;
+      }
+      .margin_top_button {
+        margin-top: 30px;
+      }
+      ul {
+        list-style-type: none;
+      }
+      .weight_text {
+        font-weight: 700;
+      }
+      p {
+        font-weight: 600;
+      }
+
+      /*********************banner start************/
+      .background_image_banner {
+        background-image: url(images/banner.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+      .banner {
+        min-height: 70vh;
+        background-image: url(images/jusing.png);
+        background-attachment: fixed;
+        color: white;
+        text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+          0px -4px 10px rgba(255, 255, 255, 0.3);
+      }
+      /*********************banner end************/
+
+      /******************second container start**************/
+      .second_container p {
+        font-size: 18px;
+      }
+      /******************second container end**************/
+
+      /***********************third container start************************/
+      .padding_for_box {
+        padding: 0% 2%;
+      }
+      .just_box_shadow {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+          rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      }
+      .logo_third_container {
+        height: 140px;
+        width: 140px;
+        background-color: lightskyblue;
+      }
+      /***********************third container end************************/
+
+      /*****************fourth container start************************/
+      .fourth_container {
+        background-color: #267869 !important;
+        color: white;
+      }
+      /*****************fourth container end************************/
+
+      /*****************************fifth container start****************/
+      .fifth_container h5 {
+        color: #267869 !important;
+        font-weight: 700;
+      }
+      .logo_fifth_container_flexing {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .logo_data_container {
+        width: 19%;
+        margin-top: 30px;
+      }
+      .logo_image {
+        width: 140px;
+        height: 140px;
+        border-radius: 100%;
+        margin: auto;
+        overflow: hidden;
+      }
+      .logo_image:hover img {
+        transform: scale(1.3);
+        transition: 1s ease;
+      }
+      @media (max-width: 1000px) {
+        .logo_data_container {
+          width: 32.66%;
+        }
+        .padding_for_box {
+          text-align: center;
+          padding: 0% 5%;
+          margin-top: 40px;
+        }
+        .logo_third_container {
+          margin: auto;
+        }
+      }
+      @media (max-width: 800px) {
+        .logo_data_container {
+          width: 48%;
+        }
+      }
+      /*****************************fifth container end****************/
+
+      /*****************************sixth container start****************/
+
+      /*****************************sixth container end****************/
+
+      /*******************seventh container start**************/
+      .carousel {
+        background: #eee;
+      }
+      .carousel-cell {
+        width: 320px;
+        min-height: 300px;
+        margin-right: 50px;
+        border-radius: 5px;
+        counter-increment: carousel-cell;
+        padding-bottom: 2vh;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+      .carousel-cell p {
+        font-size: 20px;
+        padding: 5% 2% 0% 1%;
+      }
+      .carousel-cell a {
+        color: white;
+        font-size: 20px;
+        padding: 3%;
+      }
+      .seventh_logo_container {
+        height: 180px;
+        width: 100%;
+        background-color: saddlebrown;
+      }
+      .carousel_ing_for a {
+        font-weight: 600;
+        color: black;
+      }
+      /*******************seventh container end**************/
+
+      /*******************eighth container start***************/
+      .eighth_container {
+        background-color: #e9eeee !important;
+      }
+      .form input {
+        height: 50px;
+        width: 40%;
+        padding-left: 1.5%;
+        font-weight: 600;
+        margin-top: 20px;
+      }
+      /*******************eighth container end***************/
+
+      /**********************footer start******************/
+      .footer {
+        min-height: 60vh;
+        background-color: #55565a !important;
+      }
+      .footer h5 {
+        color: rgb(210, 210, 219);
+      }
+      .footer ul li {
+        line-height: 2.3;
+      }
+      .footer ul li a {
+        color: white;
+        font-weight: 500;
+      }
+      /**********************footer end******************/
+
+      /***********************last container start****************/
+      .last_container {
+        background-color: #267869 !important;
+      }
+      .last_container i {
+        color: whitesmoke;
+        font-size: 25px;
+      }
+      .last_container ul li {
+        display: inline;
+        margin-right: 30px;
+      }
+      .last_container a {
+        color: whitesmoke;
+        font-weight: 600;
+      }
+      nav {
+        height: 60px;
+        width: 100%;
+        background-color: black;
+      }
+      nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        line-height: 60px;
+      }
+      nav ul li {
+        margin-right: 10px;
+      }
+      nav ul li a {
+        padding: 5px 10px;
+        font-weight: 700 !important;
+        border-radius: 5px;
+        color: whitesmoke;
+      }
+      nav ul li a:hover {
+        border: 1px solid royalblue;
+        color: white;
+      }
+      @media (max-width: 1200px) {
+        nav {
+          min-height: 600px;
+          display: none;
+        }
+        nav ul {
+          flex-direction: column;
+          align-items: center;
+          padding-top: 30px;
+        }
+      }
+      #main_button {
+        position: absolute;
+        top: 13px;
+        right: 13px;
+        padding: 5px 10px;
+      }
+      /***********************last container end****************/
+    </style>
+  </head>
+  <body>
+    <!------------------------navigation start-->
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Home</a></li>
+      </ul>
+    </nav>
+    <button id="main_button">Show</button>
+    <!------------------------navigation end-->
+    <!-------------------banner start-->
+    <section class="container-fluid background_image_banner">
+      <section class="row banner text-center">
+        <section class="col my-auto">
+          <p class="display-4 weight_text">GET YOUR LIFE BACK</p>
+          <p>with our Full Recovery Focus™</p>
+          <button type="button" class="btn btn-primary">
+            REQUEST APPOINTMENT
+          </button>
+        </section>
+      </section>
+    </section>
+    <!-------------------banner end-->
+
+    <!----------------second container start-->
+    <section class="container-fluid second_container my-4 box_shadow">
+      <section class="row padding_container">
+        <section class="col">
+          <section class="container">
+            <section class="row text-center">
+              <section class="col">
+                <h3 class="weight_text">
+                  Foothills is where you go for a physical therapy assessment
+                  and rehabilitation when you want to make a FULL recovery.
+                </h3>
+                <p>
+                  Our <a href="#"> Full Recovery Focus™</a> will help you get
+                  your life back because a “good enough” recovery just isn’t
+                  good enough.
+                </p>
+                <button type="button" class="btn btn-primary margin_top_button">
+                  Find A Location
+                </button>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+    </section>
+    <!----------------second container end-->
+
+    <!----------------third container start-->
+    <section class="container-fluid box_shadow">
+      <section class="row padding_container">
+        <section class="col">
+          <section class="container">
+            <section class="row text-center">
+              <section class="col">
+                <h1 class="weight_text my-5">Stop Hurting, Start Living</h1>
+                <h3>
+                  Over the last 20 years, we’ve helped over 500,000+ patients
+                  with hands-on physical therapy that gets results.
+                </h3>
+                <p class="p-5">
+                  Our <a href="#"> Full Recovery Focus™</a> difference is
+                  evident from your very first visit. Your enthusiastic and
+                  committed therapist takes you, your pain, and your situation
+                  seriously as you discuss what full recovery looks like.
+                  Together you will map out a hands-on, customized plan to get
+                  you there. No one deserves just a good enough recovery, no
+                  matter what their situation may be. Our goal is to do
+                  everything we can to help you get your full, healthy life
+                  back.
+                </p>
+                <section class="container-fluid">
+                  <section class="row text-left">
+                    <section
+                      class="
+                        col-xl-3 col-lg-3 col-md-6 col-sm-12
+                        padding_for_box
+                      "
+                    >
+                      <section class="logo_third_container">
+                        <img
+                          src="images/just.png"
+                          height="100%"
+                          width="100%"
+                          alt=""
+                        />
+                      </section>
+                      <h4 class="my-3">Hands-On Physical Therapy</h4>
+                      <p>
+                        No two patients or injuries are the same. That’s why
+                        your physical therapy experience should be tailored to
+                        meet your specific needs.
+                      </p>
+                    </section>
+                    <section
+                      class="
+                        col-xl-3 col-lg-3 col-md-6 col-sm-12
+                        padding_for_box
+                      "
+                    >
+                      <section class="logo_third_container">
+                        <img
+                          src="images/just2.png"
+                          height="100%"
+                          width="100%"
+                          alt=""
+                        />
+                      </section>
+                      <h4 class="my-3">Cutting Edge Techniques</h4>
+                      <p>
+                        Therapist continuing education is critical in remaining
+                        at the top of our game so you can remain at the top of
+                        yours. Our therapists maintain advanced certifications
+                        in many specialized services and techniques.
+                      </p>
+                    </section>
+                    <section
+                      class="
+                        col-xl-3 col-lg-3 col-md-6 col-sm-12
+                        padding_for_box
+                      "
+                    >
+                      <section class="logo_third_container">
+                        <img
+                          src="images/just3.png"
+                          height="100%"
+                          width="100%"
+                          alt=""
+                        />
+                      </section>
+                      <h4 class="my-3">Welcoming Environment</h4>
+                      <p>
+                        We are built on our daily commitment to our patient’s
+                        needs. We don’t work for the insurance carriers. We work
+                        for you. We want every patient to feel welcomed and
+                        cared for just like they are part of a family.
+                      </p>
+                    </section>
+                    <section
+                      class="
+                        col-xl-3 col-lg-3 col-md-6 col-sm-12
+                        padding_for_box
+                      "
+                    >
+                      <section class="logo_third_container">
+                        <img
+                          src="images/just4.png"
+                          height="100%"
+                          width="100%"
+                          alt=""
+                        />
+                      </section>
+                      <h4 class="my-3">Dedicated Staff</h4>
+                      <p>
+                        Your Foothills’ therapist will guide you through the
+                        recovery process, work with you, educate you and stick
+                        with you until you make a full recovery.
+                      </p>
+                    </section>
+                  </section>
+                </section>
+                <button type="button" class="btn btn-primary margin_top_button">
+                  VIEW SERVICES & SPECIALTIES
+                </button>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+    </section>
+    <!----------------third container end-->
+
+    <!-------------------fourth container start-->
+    <section class="container-fluid my-4 box_shadow">
+      <section class="row fourth_container padding_container">
+        <section class="col">
+          <section class="container">
+            <section class="row">
+              <section class="col-xl-6 col-lg-6 col-md-12 col-sm-12 my-auto">
+                <p class="display-4 weight_text">SKIP THE REFERRAL!</p>
+                <p>WE ARE A DIRECT ACCESS PROVIDER</p>
+                <button type="button" class="btn btn-primary margin_top_button">
+                  <i class="fas fa-calendar-alt"></i>&nbsp; REQUEST APPOINTMENT
+                </button>
+              </section>
+              <section class="col-xl-6 col-lg-6 col-md-12 col-sm-12 my-auto">
+                <p>
+                  Did you know that in Arizona you can be evaluated and treated
+                  by a physical therapist without a referral from your physician
+                  or healthcare professional? Physical Therapists are an
+                  integral part of the health care team and provide a
+                  cost-effective access point for patients with a variety of
+                  medical and musculoskeletal conditions. Learn more.
+                </p>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+    </section>
+    <!-------------------fourth container end-->
+
+    <!-------------------fifth container start-->
+    <section class="container">
+      <section class="row fifth_container text-center padding_container">
+        <section class="col">
+          <h1>Where is your pain?</h1>
+          <p>
+            Select a region of the body to see common causes of pain, symptoms,
+            and treatment options.
+          </p>
+
+          <!--------------------------------->
+          <section class="logo_fifth_container_flexing my-5">
+            <section class="logo_data_container">
+              <section class="logo_image">
+                <img src="images/1.jpg" height="100%" width="100%" alt="" />
+              </section>
+              <h5 class="my-3">HEAD</h5>
+              <p>
+                A therapist holding a patient's head as she lays on the table.
+              </p>
+            </section>
+            <section class="logo_data_container">
+              <section class="logo_image">
+                <img src="images/2.jpg" height="100%" width="100%" alt="" />
+              </section>
+              <h5 class="my-3">NECK</h5>
+              <p>
+                A therapist sitting behind a patient with his hand on the back
+                of her neck
+              </p>
+            </section>
+            <section class="logo_data_container">
+              <section class="logo_image">
+                <img src="images/3.jpg" height="100%" width="100%" alt="" />
+              </section>
+              <h5 class="my-3">SHOULDER</h5>
+              <p>A therapist pressing on a patient's shoulder</p>
+            </section>
+            <section class="logo_data_container">
+              <section class="logo_image">
+                <img src="images/4.jpg" height="100%" width="100%" alt="" />
+              </section>
+              <h5 class="my-3">ELBOW</h5>
+              <p>A therapist holding a patient by her wrist and elbow.</p>
+            </section>
+            <section class="logo_data_container">
+              <section class="logo_image">
+                <img src="images/5.jpg" height="100%" width="100%" alt="" />
+              </section>
+              <h5 class="my-3">HIP</h5>
+              <p>
+                A patient laying on her side on a table with the therapist
+                pressing on her hip.
+              </p>
+            </section>
+            <section class="logo_data_container">
+              <section class="logo_image">
+                <img src="images/6.jpg" height="100%" width="100%" alt="" />
+              </section>
+              <h5 class="my-3">HAND & WRIST</h5>
+              <p>A therapist manipulating a patient's wrist and hand.</p>
+            </section>
+            <section class="logo_data_container">
+              <section class="logo_image">
+                <img src="images/7.jpg" height="100%" width="100%" alt="" />
+              </section>
+              <h5 class="my-3">BACK & SPINE</h5>
+              <p>Physical therapist working on a patient's back.</p>
+            </section>
+            <section class="logo_data_container">
+              <section class="logo_image">
+                <img src="images/8.jpg" height="100%" width="100%" alt="" />
+              </section>
+              <h5 class="my-3">KNEE & LOWER BODY</h5>
+              <p>
+                A patient laying on a table with the therapist bending her knee.
+              </p>
+            </section>
+            <section class="logo_data_container">
+              <section class="logo_image">
+                <img src="images/9.jpg" height="100%" width="100%" alt="" />
+              </section>
+              <h5 class="my-3">ANKLE & FOOT</h5>
+              <p>
+                A therapist working with his patient's foot as she lays on the
+                table.
+              </p>
+            </section>
+            <section class="logo_data_container">
+              <section class="logo_image">
+                <img src="images/10.jpg" height="100%" width="100%" alt="" />
+              </section>
+              <h5 class="my-3">PELVIC FLOOR</h5>
+              <p>Pelvic Floor conditions category - men and women</p>
+            </section>
+          </section>
+          <!--------------------------------->
+
+          <button type="button" class="btn btn-primary">
+            <i class="fas fa-calendar-alt"></i>&nbsp; REQUEST APPOINTMENT
+          </button>
+          <p class="margin_top_button">
+            <i class="fas fa-stopwatch"></i>&nbsp; Need help immediately?
+            <a href="#">Schedule a Complimentary Screening</a>
+          </p>
+        </section>
+      </section>
+    </section>
+    <!-------------------fifth container end-->
+
+    <!-------------------sixth container start-->
+
+    <!-------------------sixth container end-->
+
+    <!-------------------seventh container start-->
+    <section class="container carousel_ing_for text-center my-4">
+      <h1>News and Updates</h1>
+      <section class="row text-left padding_container">
+        <section class="col">
+          <div
+            class="main-carousel"
+            data-flickity='{ "wrapAround": true , "pageDots":  false }'
+          >
+            <div class="carousel-cell">
+              <section class="seventh_logo_container">
+                <img src="images/a1.jpg" height="100%" width="100%" alt="" />
+              </section>
+              <p>How Long Should Swelling Last After an injury</p>
+              <a href="#">Read More</a>
+            </div>
+            <div class="carousel-cell">
+              <section class="seventh_logo_container">
+                <img src="images/a2.jpg" height="100%" width="100%" alt="" />
+              </section>
+              <p>How Long Should Swelling Last After an injury</p>
+              <a href="#">Read More</a>
+            </div>
+            <div class="carousel-cell">
+              <section class="seventh_logo_container">
+                <img src="images/a3.jpg" height="100%" width="100%" alt="" />
+              </section>
+              <p>How Long Should Swelling Last After an injury</p>
+              <a href="#">Read More</a>
+            </div>
+            <div class="carousel-cell">
+              <section class="seventh_logo_container">
+                <img src="images/a4.jpg" height="100%" width="100%" alt="" />
+              </section>
+              <p>How Long Should Swelling Last After an injury</p>
+              <a href="#">Read More</a>
+            </div>
+            <div class="carousel-cell">
+              <section class="seventh_logo_container">
+                <img src="images/a5.jpg" height="100%" width="100%" alt="" />
+              </section>
+              <p>How Long Should Swelling Last After an injury</p>
+              <a href="#">Read More</a>
+            </div>
+            <div class="carousel-cell">
+              <section class="seventh_logo_container">
+                <img src="images/a6.jpg" height="100%" width="100%" alt="" />
+              </section>
+              <p>How Long Should Swelling Last After an injury</p>
+              <a href="#">Read More</a>
+            </div>
+            <div class="carousel-cell">
+              <section class="seventh_logo_container">
+                <img src="images/a7.jpg" height="100%" width="100%" alt="" />
+              </section>
+              <p>How Long Should Swelling Last After an injury</p>
+              <a href="#">Read More</a>
+            </div>
+            <div class="carousel-cell">
+              <section class="seventh_logo_container">
+                <img src="images/a8.jpg" height="100%" width="100%" alt="" />
+              </section>
+              <p>How Long Should Swelling Last After an injury</p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </section>
+      </section>
+    </section>
+    <!-------------------seventh container end-->
+
+    <!-------------------eighth container start-->
+    <section class="container-fluid eighth_container bg-info">
+      <section class="row padding_container">
+        <section class="col">
+          <section class="container text-center">
+            <section class="row">
+              <section class="col">
+                <p>
+                  Subscribe to receive our latest Dr. written content (solutions
+                  and wellness tips) delivered fresh to your inbox. It's FREE!
+                </p>
+                <!------------form-->
+                <section class="form">
+                  <form action="" method="POST">
+                    <p>
+                      <input
+                        type="text"
+                        name="fname"
+                        placeholder="Enter Your Name"
+                        id=""
+                      />
+
+                      <input
+                        type="email"
+                        name="email"
+                        placeholder="Enter Your Email"
+                        id=""
+                      />
+                    </p>
+                  </form>
+                </section>
+
+                <!------------form-->
+                <button type="button" class="btn btn-primary my-4">
+                  SUBSCRIBE
+                </button>
+                <p>
+                  We are Medical HIPPA Compliant and will not share your
+                  information with anyone.
+                </p>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+    </section>
+    <!-------------------eighth container end-->
+
+    <!-------------------footer start-->
+    <section class="container-fluid bg-dark my-1">
+      <section class="row footer padding_container text-white">
+        <section class="col">
+          <section class="container">
+            <section class="row hellooo">
+              <section class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                <h5>SERVICES</h5>
+                <ul class="my-4">
+                  <li><a href="#">Physical Therapy</a></li>
+                  <li><a href="#">Specialties</a></li>
+                  <li><a href="#">Telehealth Physical Therapy</a></li>
+                </ul>
+              </section>
+              <section class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                <h5>GET STARTED</h5>
+                <ul class="my-4">
+                  <li><a href="#">Complimentary Rapid Assessment</a></li>
+                  <li><a href="#">No Referral Needed</a></li>
+                  <li><a href="#">Preparing fo r Your Appointment</a></li>
+                  <li><a href="#">Accepted Insurances</a></li>
+                  <li><a href="#">New Patient Forms</a></li>
+                  <li><a href="#">FAQ</a></li>
+                </ul>
+              </section>
+              <section class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                <h5>RESOURCES</h5>
+                <ul class="my-4">
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Success Stories</a></li>
+                  <li><a href="#">Conditions</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Physician Resources</a></li>
+                </ul>
+              </section>
+              <section class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                <h5>CAREERS</h5>
+                <ul class="my-4">
+                  <li><a href="#">Join Our Team</a></li>
+                  <li><a href="#"> Residency Program</a></li>
+                </ul>
+              </section>
+            </section>
+            <section class="text-right">
+              <button type="button" class="btn btn-light margin_top_button">
+                <i class="fas fa-calendar-alt"></i>&nbsp; REQUEST APPOINTMENT</button
+              >&nbsp;&nbsp;&nbsp;
+              <button type="button" class="btn btn-light margin_top_button">
+                <i class="fas fa-map-marker-alt"></i>&nbsp; FIND A LOCATION
+              </button>
+            </section>
+          </section>
+        </section>
+      </section>
+    </section>
+    <!-------------------footer end-->
+
+    <!-------------------last container start-->
+    <section class="container-fluid last_container text-white">
+      <section class="row">
+        <section class="col my-4">
+          <section class="container">
+            <section class="row">
+              <section class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                <ul>
+                  <li><a href="#">SITEMAP</a></li>
+                  <li><a href="#">ACCESSIBILITY</a></li>
+                  <li><a href="#">TERMS & CONDITIONS</a></li>
+                </ul>
+                <p>
+                  ©2021 Foothills Sports Medicine Physical Therapy. All rights
+                  reserved.
+                </p>
+                <p>
+                  Empowered by
+                  <a href="#"> Foothills Therapy Partners (FTP).</a>
+                </p>
+              </section>
+              <section class="col-xl-6 col-lg-6 col-md-12 col-sm-12 text-right">
+                <ul>
+                  <li>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                  </li>
+                </ul>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+    </section>
+    <!-------------------last container end-->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  </body>
+</html>
